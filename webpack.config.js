@@ -1,21 +1,27 @@
-/* eslint-disable */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
-  },
+ module.exports = {
   mode: 'production',
+  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    print: './src/print.js',
+  },
+  devServer: {
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
   ],
-  module: {
+   output: {
+    filename: 'bundle.js',
+    filename: '[name].bundle.js',
+     path: path.resolve(__dirname, 'dist'),
+   },
+   module: {
     rules: [
       {
         test: /\.css$/i,
@@ -23,7 +29,7 @@ module.exports = {
       },
     ],
   },
-  devServer: {
-    static: './dist',
+  optimization: {
+    runtimeChunk: 'single',
   },
-};
+ };
