@@ -33,12 +33,23 @@
 }
 
 #score-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  border: solid #000 2px;
-  padding: 5px;
+    flex-direction: column;
+    gap: 9px;
+    border: black;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    overflow-y: scroll;
+    height: 200px;
+    list-style: none;
+    width: 569px;
 }
+
+#score-container li:nth-child(odd) {
+    background-color: gray;
+    color: black;
+}
+
 
 li {
   list-style: none;
@@ -113,4 +124,4 @@ li {
   #podiums {
     display: none;
   }
-}
+} 

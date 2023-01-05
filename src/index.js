@@ -10,7 +10,7 @@ const displayScores = async () => {
   let scoreGenerator = '';
   sortScores(data.result);
   data.result.forEach((user) => {
-    scoreGenerator += `<li><span class="bold">Name:</span> ${user.user}  <span class="bold">  Score:</span> ${user.score}</li>`;
+    scoreGenerator += `<li><span class="bold"></span> ${user.user}<span class="bold"> : </span> ${user.score}</li>`;
   });
   sectionForScores.innerHTML = scoreGenerator;
 };

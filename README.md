@@ -69,6 +69,9 @@
 
 > This project can be used as an example on how objects and list can be used with classes
 To get a local copy up and running, follow these steps.
+- cd Leaderboard
+- npm install
+- npm run start
 
 ### Prerequisites
 
