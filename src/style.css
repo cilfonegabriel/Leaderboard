@@ -33,26 +33,21 @@
 }
 
 #score-container {
-    flex-direction: column;
-    gap: 9px;
-    border: black;
-    padding: 5px;
-    text-align: center;
-    margin: 0 auto;
-    overflow-y: scroll;
-    height: 200px;
-    list-style: none;
-    width: 569px;
+  flex-direction: column;
+  gap: 9px;
+  border: black;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 200px;
+  list-style: none;
+  width: 569px;
 }
 
 #score-container li:nth-child(odd) {
-    background-color: gray;
-    color: black;
-}
-
-
-li {
-  list-style: none;
+  background-color: gray;
+  color: black;
 }
 
 .score-button {
@@ -124,4 +119,4 @@ li {
   #podiums {
     display: none;
   }
-} 
+}
