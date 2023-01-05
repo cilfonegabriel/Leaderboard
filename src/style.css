@@ -1,114 +1,116 @@
 * {
-    font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
-  }
-  
+  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+}
+
+.page-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  margin-top: 0;
+  background-color: #873600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Playfair Display', 'Helvetica', 'Arial', sans-serif;
+}
+
+.scores-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.recent-scores {
+  display: flex;
+  gap: 10px;
+}
+
+#score-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: solid #000 2px;
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+.score-button {
+  align-self: center;
+  padding: 5px;
+  background-color: #797d7f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-container {
+  margin-top: 80px;
+}
+
+#my-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#add-button {
+  align-self: flex-end;
+  padding: 5px;
+  background-color: #797d7f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#podiums {
+  position: fixed;
+  display: flex;
+  right: 0;
+  bottom: 0;
+}
+
+#podium1 {
+  background-color: #ecb939;
+  height: 140px;
+  width: 140px;
+  align-self: flex-end;
+}
+
+#podium2 {
+  background-color: #372e29;
+  height: 170px;
+  width: 140px;
+}
+
+#podium3 {
+  background-color: #f0c75e;
+  height: 110px;
+  width: 140px;
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
   .page-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .page-title {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    margin-top: 0;
-    background-color: #372e29;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    font-family: 'Playfair Display', 'Helvetica', 'Arial', sans-serif;
-  }
-  
-  .scores-container {
-    display: flex;
     flex-direction: column;
-    margin-top: 80px;
   }
-  
-  .recent-scores {
-    display: flex;
-    gap: 10px;
-  }
-  #score-container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    border: solid #000 2px;
-    padding: 5px;
-  }
-  li {
-    list-style: none;
-  }
-  
-  .score-button {
-    align-self: center;
-    padding: 5px;
-    background-color: #ecb939;
-    color: #372e29;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .add-container {
-    margin-top: 80px;
-  }
-  
-  #my-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  #add-button {
-    align-self: flex-end;
-    padding: 5px;
-    background-color: #ecb939;
-    color: #372e29;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .bold {
-    font-weight: bold;
-  }
-  
+
   #podiums {
-    position: fixed;
-    display: flex;
-    right: 0;
-    bottom: 0;
+    display: none;
   }
-  
-  #podium1 {
-    background-color: #ecb939;
-    height: 140px;
-    width: 140px;
-    align-self: flex-end;
-  }
-  
-  #podium2 {
-    background-color: #372e29;
-    height: 170px;
-    width: 140px;
-  }
-  
-  #podium3 {
-    background-color: #f0c75e;
-    height: 110px;
-    width: 140px;
-    align-self: flex-end;
-  }
-  
-  @media (max-width: 768px) {
-    .page-container {
-      flex-direction: column;
-    }
-  
-    #podiums {
-      display: none;
-    }
-  }
+}
