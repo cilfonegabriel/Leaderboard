@@ -1,15 +1,30 @@
+* {
+  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+}
+
 .page-container {
   display: flex;
   justify-content: space-around;
 }
 
 .page-title {
-  margin-left: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  margin-top: 0;
+  background-color: #873600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Playfair Display', 'Helvetica', 'Arial', sans-serif;
 }
 
 .scores-container {
   display: flex;
   flex-direction: column;
+  margin-top: 80px;
 }
 
 .recent-scores {
@@ -18,19 +33,35 @@
 }
 
 #score-container {
-  display: flex;
   flex-direction: column;
-  gap: 12px;
-  border: solid #000 2px;
+  gap: 9px;
+  border: black;
   padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 200px;
+  list-style: none;
+  width: 569px;
 }
 
-.li {
-  list-style: none;
+#score-container li:nth-child(odd) {
+  background-color: gray;
+  color: black;
 }
 
 .score-button {
   align-self: center;
+  padding: 5px;
+  background-color: #797d7f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-container {
+  margin-top: 80px;
 }
 
 #my-form {
@@ -41,4 +72,51 @@
 
 #add-button {
   align-self: flex-end;
+  padding: 5px;
+  background-color: #797d7f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#podiums {
+  position: fixed;
+  display: flex;
+  right: 0;
+  bottom: 0;
+}
+
+#podium1 {
+  background-color: #ecb939;
+  height: 140px;
+  width: 140px;
+  align-self: flex-end;
+}
+
+#podium2 {
+  background-color: #372e29;
+  height: 170px;
+  width: 140px;
+}
+
+#podium3 {
+  background-color: #f0c75e;
+  height: 110px;
+  width: 140px;
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+  }
+
+  #podiums {
+    display: none;
+  }
 }
